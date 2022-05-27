@@ -13,18 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.frontpage');
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/', 'HomepageController@index');
+    Route::get('/aboutPage', 'AboutpageController@index');
+    Route::get('/contactPage', 'ContactpageController@index');
+    //TODO id and page parameters
+    Route::get('/goodsPage/{page?}', 'GoodspageController@index');
+    Route::get('/productPage/{id}', 'ProductpageController@index');
 });
-Route::get('/aboutPage', function () {
-    return view('pages.aboutpage');
-});
-Route::get('/contactPage', function () {
-    return view('pages.contactpage');
-});
-Route::get('/goodsPage', function () {
-    return view('pages.goodspage');
-});
-Route::get('/productPage', function () {
-    return view('pages.productpage');
-});
+
