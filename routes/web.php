@@ -19,6 +19,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/contactPage', 'ContactpageController@index');
     //TODO id and page parameters
     Route::get('/goodsPage/{page?}', 'GoodspageController@index');
-    Route::get('/productPage/{id}', 'ProductpageController@index');
+    Route::get('/productPage/{id?}', 'ProductpageController@index');
 });
 

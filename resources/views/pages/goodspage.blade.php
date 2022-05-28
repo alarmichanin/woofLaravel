@@ -2,6 +2,7 @@
 
 @section('title','Woof Товари')
 @section('content')
+    {{dd($__data)}}
     <div class="container search">
         <div class="row">
             <div class="offset-1 col-10 offset-lg-0 col-lg-3 ">
@@ -130,7 +131,8 @@
                                                 <p class="shortDesc">Якісна нейлонова сітка, для великих собак.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">250₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,7 +145,8 @@
                                                 <p class="shortDesc">Нейлоновий намордник, для маленьких песиків.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">255₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -156,7 +159,8 @@
                                                 <p class="shortDesc">Професійний намордник для дресерувальників.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">750₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +173,8 @@
                                                 <p class="shortDesc">Чудова тимчасова заміна постійному наморднику.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">50₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,7 +191,8 @@
                                                 <p class="shortDesc">Святковий наряд для Вашого улюбленця.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">1250₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -200,7 +206,8 @@
                                                     прогулянки.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">920₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -213,7 +220,8 @@
                                                 <p class="shortDesc">Комбінезон для маленьких собак породи такса.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">750₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -226,7 +234,8 @@
                                                 <p class="shortDesc">Якісний жакет для невеликих собак.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">650₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -243,7 +252,8 @@
                                                 <p class="shortDesc">Повідець - рулетка. Для вільних прогулянок.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">550₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,10 +263,12 @@
                                             <div class="content">
                                                 <div class="photo"><img src="../assets/goodsPhoto/leash1.jpg"></div>
                                                 <p class="name">Повідець<br/>“Надія”</p>
-                                                <p class="shortDesc">Повідець із карабіном, виконаний із міцної тканини.</p>
+                                                <p class="shortDesc">Повідець із карабіном, виконаний із міцної
+                                                    тканини.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">450₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -269,7 +281,8 @@
                                                 <p class="shortDesc">Надійний і довгослуживий повідець.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">350₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,7 +295,8 @@
                                                 <p class="shortDesc">Повідець американського виробника.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">250₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -299,7 +313,8 @@
                                                 <p class="shortDesc">Сімпаріка, 3 таблетки.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">1225₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -312,7 +327,8 @@
                                                 <p class="shortDesc">Мілпразон, 2 таблетки, собаки понад 5 кг.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">350₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -322,10 +338,12 @@
                                             <div class="content">
                                                 <div class="photo"><img src="../assets/goodsPhoto/med3.jpg"></div>
                                                 <p class="name">Дехінел<br/>Плюс XL</p>
-                                                <p class="shortDesc">Дехінел для застосування у ветеринарній медклініці.</p>
+                                                <p class="shortDesc">Дехінел для застосування у ветеринарній
+                                                    медклініці.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">50₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -338,7 +356,8 @@
                                                 <p class="shortDesc">Каніверм, видається за рецептом ветеренара.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">520₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -355,7 +374,8 @@
                                                 <p class="shortDesc">Корм від українського виробника.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">110₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -369,7 +389,8 @@
                                                     собак.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">799₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -382,7 +403,8 @@
                                                 <p class="shortDesc">Корм для молодих песиків. Курятина в желе.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">87₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +417,8 @@
                                                 <p class="shortDesc">Німецький виробник. Корм зі смаком яловичини.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">150₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -412,7 +435,8 @@
                                                 <p class="shortDesc">Намордник по формі собаки породи лабрадор.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">230₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -425,7 +449,8 @@
                                                 <p class="shortDesc">Повідець - рулетка. Японський виробник.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">180₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -438,7 +463,8 @@
                                                 <p class="shortDesc">Корм для маленьких песиків дорослого віку.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">600₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -451,7 +477,8 @@
                                                 <p class="shortDesc">Корм для собак масою до 10 кг.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">175₴</p>
-                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                    <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
