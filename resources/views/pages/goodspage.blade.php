@@ -16,30 +16,14 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-3 categories">
-                <div class="category">Ціна</div>
-                <div class="category">Бренд</div>
-                <div class="category">Країна виробник</div>
-                <div class="category">Служба доставки</div>
-                <div class="category">Тип</div>
-                <div class="category">Намордники</div>
-                <div class="category">Одяг</div>
-                <div class="category">Харчування</div>
-                <div class="category">Повідки</div>
-                <div class="category">Медикаменти</div>
-                <div class="category">Іграшки</div>
+                @foreach($categories as $category)
+                    <div class="category {{$category->name}}">{{$category->name}}</div>
+                @endforeach
             </div>
             <ul class="category_menu">
-                <li><a class="item" href="">Ціна</a></li>
-                <li><a class="item" href="">Бренд</a></li>
-                <li><a class="item" href="">Країна виробник</a></li>
-                <li><a class="item" href="">Служба доставки</a></li>
-                <li><a class="item" href="">Тип</a></li>
-                <li><a class="item" href="">Намордники</a></li>
-                <li><a class="item" href="">Одяг</a></li>
-                <li><a class="item" href="">Харчування</a></li>
-                <li><a class="item" href="">Повідки</a></li>
-                <li><a class="item" href="">Медикаменти</a></li>
-                <li><a class="item" href="">Іграшки</a></li>
+                @foreach($categories as $category)
+                    <div class="category {{$category->name}}">{{$category->name}}</div>
+                @endforeach
                 <li><i class="fa-solid fa-xmark close_category"></i></li>
             </ul>
             <div class="col-12 col-lg-9">
@@ -142,7 +126,8 @@
                                             <div class="content">
                                                 <div class="photo"><img src="../assets/goodsPhoto/2.jpg"></div>
                                                 <p class="name">Намордник<br/>“Малюк”</p>
-                                                <p class="shortDesc">Нейлоновий намордник, для маленьких песиків.</p>
+                                                <p class="shortDesc">Нейлоновий намордник, для маленьких
+                                                    песиків.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">255₴</p>
                                                     <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
@@ -170,7 +155,8 @@
                                             <div class="content">
                                                 <div class="photo"><img src="../assets/goodsPhoto/4.jpg"></div>
                                                 <p class="name">Пластиковий<br/>намордник</p>
-                                                <p class="shortDesc">Чудова тимчасова заміна постійному наморднику.</p>
+                                                <p class="shortDesc">Чудова тимчасова заміна постійному
+                                                    наморднику.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">50₴</p>
                                                     <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
@@ -186,7 +172,8 @@
                                     <div class="col-6 col-md-3">
                                         <div class="card">
                                             <div class="content">
-                                                <div class="photo"><img src="../assets/goodsPhoto/clothes1.jpg"></div>
+                                                <div class="photo"><img src="../assets/goodsPhoto/clothes1.jpg">
+                                                </div>
                                                 <p class="name">Кофта<br/>“Різдвяна”</p>
                                                 <p class="shortDesc">Святковий наряд для Вашого улюбленця.</p>
                                                 <div class="row lastLine">
@@ -200,7 +187,8 @@
                                     <div class="col-6 col-md-3">
                                         <div class="card">
                                             <div class="content">
-                                                <div class="photo"><img src="../assets/goodsPhoto/clothes2.jpg"></div>
+                                                <div class="photo"><img src="../assets/goodsPhoto/clothes2.jpg">
+                                                </div>
                                                 <p class="name">Кофта<br/>“Сірий мачо”</p>
                                                 <p class="shortDesc">Кофта для маленьких песиків для комфортної
                                                     прогулянки.</p>
@@ -215,9 +203,11 @@
                                     <div class="col-6 col-md-3">
                                         <div class="card">
                                             <div class="content">
-                                                <div class="photo"><img src="../assets/goodsPhoto/clothes3.jpg"></div>
+                                                <div class="photo"><img src="../assets/goodsPhoto/clothes3.jpg">
+                                                </div>
                                                 <p class="name">Комбінезон<br/>“Карапуз”</p>
-                                                <p class="shortDesc">Комбінезон для маленьких собак породи такса.</p>
+                                                <p class="shortDesc">Комбінезон для маленьких собак породи
+                                                    такса.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">750₴</p>
                                                     <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>
@@ -229,7 +219,8 @@
                                     <div class="col-6 col-md-3">
                                         <div class="card">
                                             <div class="content">
-                                                <div class="photo"><img src="../assets/goodsPhoto/clothes4.jpg"></div>
+                                                <div class="photo"><img src="../assets/goodsPhoto/clothes4.jpg">
+                                                </div>
                                                 <p class="name">Жакет<br/>“Голубенький”</p>
                                                 <p class="shortDesc">Якісний жакет для невеликих собак.</p>
                                                 <div class="row lastLine">
@@ -414,7 +405,8 @@
                                             <div class="content">
                                                 <div class="photo"><img src="../assets/goodsPhoto/meal4.jpeg"></div>
                                                 <p class="name">Корм<br/>“Home Food”</p>
-                                                <p class="shortDesc">Німецький виробник. Корм зі смаком яловичини.</p>
+                                                <p class="shortDesc">Німецький виробник. Корм зі смаком
+                                                    яловичини.</p>
                                                 <div class="row lastLine">
                                                     <p class="price col-6">150₴</p>
                                                     <div class="buy col-6"><i class="fa-solid fa-cart-shopping"></i>

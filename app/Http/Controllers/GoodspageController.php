@@ -13,10 +13,13 @@ class GoodspageController extends Controller
 {
     public function index()
     {
-        return view('pages.goodspage', ['categories' => Category::all(),
+        return view('pages.goodspage', [
+            'categories' => Category::all(),
             'brands' => Brand::all(),
-            'photos' => Photo::all()->where('isGeneral', true),
             'sizes' => Size::all(),
-            'products' => Product::all()]);
+            'products' => Product::all(),
+            'popular' => Product::all()->where('popular', true),
+            'photos' => Photo::with('products')->where('isGeneral', true)
+        ]);
     }
 }
