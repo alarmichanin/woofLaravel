@@ -9,13 +9,15 @@
                     <p class="woof">WOOF</p>
                     <p class="motto">Ваш улюбленець – наше<br>натхнення</p>
                     <div class="col-8">
-                        <button class="buyNow">КУПУВАТИ</button>
+                        <a href="/goodsPage" class="btnHref">
+                            <button class="buyNow">КУПУВАТИ</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="aboutUs">
+    <div class="aboutUs _anim-items">
         <div class="row">
             <div class="offset-1 col-10 offset-md-0 col-md-8">
                 <div class="photoForBlock">
@@ -65,7 +67,7 @@
             </div>
         </div>
     </div>
-    <div class="ourGoods">
+    <div class="ourGoods _anim-items">
         <div class="row">
             <div class="offset-1 col-10 col-md-8">
                 <div class="blocks">
@@ -114,7 +116,7 @@
     </div>
 
 
-    <div class="ourPartners">
+    <div class="ourPartners _anim-items">
         <div class="container">
             <p class="headerOfPartner">НАШІ ПАРТНЕРИ</p>
             <div class="row logos">
@@ -129,7 +131,7 @@
         <div class="weAreSelling container-sm">
             <div class="goods">
                 <p class="headerOfGoods">МИ ПРОДАЄМО</p>
-                <div class="row line">
+                <div class="row line _anim-items">
                     <div class="offset-1 col-10 col-md-5">
                         <div class="photo">
                             <img src="{{asset('assets/ourGoods/dogLeash.jpg')}}">
@@ -143,7 +145,7 @@
                         <p class="nameOfGood">Намордники</p>
                     </div>
                 </div>
-                <div class="row line">
+                <div class="row line _anim-items">
                     <div class="offset-1 col-10 col-md-5">
                         <div class="photo">
                             <img src="{{asset('assets/ourGoods/dogCloth.jpg')}}">
@@ -157,7 +159,7 @@
                         <p class="nameOfGood">Їжу</p>
                     </div>
                 </div>
-                <div class="row line">
+                <div class="row line _anim-items">
                     <div class="col-10 offset-1 col-md-8 offset-md-2">
                         <div class="photo">
                             <img src="{{asset('assets/ourGoods/dogMed.jpg')}}">
@@ -166,7 +168,9 @@
                     </div>
                 </div>
                 <div class="col-6 offset-3">
-                    <button class="ourGoodsBtn">КУПИТИ ЗАРАЗ</button>
+                    <a href="/goodsPage" class="btnHref">
+                        <button class="ourGoodsBtn">КУПИТИ ЗАРАЗ</button>
+                    </a>
                 </div>
             </div>
         </div>

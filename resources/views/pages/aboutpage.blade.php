@@ -10,24 +10,24 @@
             </div>
             <div class="whoWeAre col-10 offset-1">
                 <div class="row">
-                    <p class="header">ХТО МИ</p>
+                    <p class="header _anim-items">ХТО МИ</p>
                 </div>
                 <div class="row">
                     <div class="col-6 offset-3">
-                        <img src="{{asset("assets/founder.jpeg")}}" alt="founder" class="founder">
+                        <img src="{{asset("assets/founder.jpeg")}}" alt="founder" class="founder _anim-items">
                     </div>
                 </div>
                 <div class="row">
-                    <p class="photoTitle">Засновник компанії Woof </p>
+                    <p class="photoTitle _anim-items">Засновник компанії Woof </p>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <p class="generalInfo">Засновані в Україні з клієнтами та членами команди зі всього світу</p>
+                        <p class="generalInfo _anim-items">Засновані в Україні з клієнтами та членами команди зі всього світу</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-8 offset-2">
-                        <p class="info">
+                        <p class="info _anim-items">
                             Наша компанія працює на міжнародному ринку більше п'яти років. За цей час ми заслужили довіру
                             тисяч клієнтів. Наш продукт є гарантією якості та довговічності. Ми довіряємо компаніям, з якими
                             працюємо. Вони професіонали своєї справи. На початку зародження нашої компанії у нас була
