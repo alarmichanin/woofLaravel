@@ -2,7 +2,7 @@
 
 @section('title','Woof Товари')
 @section('content')
-    {{dd($__data)}}
+{{--    {{dd($__data)}}--}}
     <div class="container search">
         <div class="row">
             <div class="offset-1 col-10 offset-lg-0 col-lg-3 ">
