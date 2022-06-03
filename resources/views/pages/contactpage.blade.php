@@ -5,15 +5,15 @@
     <div class="contactUs">
         <div class="row paws">
             <div class="col-2">
-                <i class="fa-solid fa-paw paw child left"></i>
+                <i class="fa-solid fa-paw paw child left _anim-items"></i>
             </div>
             <div class="col-2 offset-8">
-                <i class="fa-solid fa-paw paw child right"></i>
+                <i class="fa-solid fa-paw paw child right _anim-items"></i>
             </div>
         </div>
         <div class="row">
             <div class="col-10 offset-1 col-md-6 offset-md-3">
-                <p class="contact">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
+                <p class="contact _anim-items">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
             </div>
         </div>
         <div class="row mapForm">
