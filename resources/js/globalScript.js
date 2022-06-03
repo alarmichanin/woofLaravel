@@ -17,27 +17,15 @@ function addAnimation() {
         function animOnScroll() {
             for (let i = 0; i < animItems.length; i++) {
                 const animItem = animItems[i];
-                const animItemHeight = animItem.offsetHeight;
-                //TODO: reread this functionality
-                const animItemOffset = offset(animItem).top / 1.5;
-                const animStart = 1;
-                let animItemPoint = window.innerHeight - animItemHeight / animStart;
-                if (animItemHeight > window.innerHeight) {
-                    animItemPoint = window.innerHeight - window.innerHeight / animStart;
-                }
-                if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                let windowHeight = window.innerHeight;
+                let elementTop = animItem.getBoundingClientRect().top;
+                let elementVisible = 150;
+                if (Math.abs(elementTop) < windowHeight - elementVisible) {
                     animItem.classList.add("_active");
                 } else {
                     animItem.classList.remove("_active");
                 }
             }
-        }
-
-        function offset(el) {
-            const rect = el.getBoundingClientRect(),
-                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
         }
 
         animOnScroll();
