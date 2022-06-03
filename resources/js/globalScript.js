@@ -19,7 +19,7 @@ function addAnimation() {
                 const animItem = animItems[i];
                 let windowHeight = window.innerHeight;
                 let elementTop = animItem.getBoundingClientRect().top;
-                let elementVisible = 150;
+                let elementVisible = 75;
                 if (Math.abs(elementTop) < windowHeight - elementVisible) {
                     animItem.classList.add("_active");
                 } else {
