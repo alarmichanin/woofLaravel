@@ -32,7 +32,7 @@
                     <div class="col-4 barI">
                         <i class="fa-solid fa-bars"></i>
                         <ul class="hamburger_menu">
-                            <li><a class="item" href="">Головна</a></li>
+                            <li><a class="item" href="/">Головна</a></li>
                             <li><a class="item" href="aboutPage">Про нас</a></li>
                             <li><a class="item" href="goodsPage">Наші товари</a></li>
                             <li><a class="item" href="contactPage">Контакти</a></li>
