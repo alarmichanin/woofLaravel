@@ -9,7 +9,7 @@ body {
     background-size: contain;
 }
 
-div[class="header"]{
+div[class="header"] {
     background: url("/assets/headerIMG.jpg") no-repeat;
     background-position-x: 55%;
     height: 700px;
@@ -331,9 +331,17 @@ div[class="header"]{
             }
         }
     }
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.aboutUs._active, .ourGoods._active {
+    opacity: 1;
 }
 
 .ourGoods {
+    opacity: 0;
+    transition: all 1.5s ease 0s;
     margin: 0 0 120px 0;
     position: relative;
     @media (min-width: 768px) {
