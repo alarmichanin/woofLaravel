@@ -28,7 +28,6 @@ body{
     @media(min-width: 992px){
       font-size: 140px;
     }
-
   }
   .left{
     left: 10vw;
@@ -37,6 +36,10 @@ body{
       left: 5vw;
     }
   }
+    .left._active{
+        animation: slideInRight;
+        animation-duration: 2s;
+    }
   .right{
     left: 80vw;
     transform: rotate(128deg);
@@ -44,6 +47,10 @@ body{
       left: 85vw;
     }
   }
+    .right._active{
+        animation: slideInLeft;
+        animation-duration: 2s;
+    }
   .contact {
     margin-top: 60px;
     font-weight: bold;
@@ -68,6 +75,10 @@ body{
       font-size: 56px;
     }
   }
+    .contact._active{
+        animation: rubberBand;
+        animation-duration: 2s;
+    }
 
   .mapForm {
     margin-top: 25px;
@@ -144,6 +155,10 @@ body{
       @media(min-width: 992px){
         font-size: 36px;
       }
+        &:hover{
+            background: @forthColor;
+            color: @thirdColor;
+        }
     }
   }
 }
