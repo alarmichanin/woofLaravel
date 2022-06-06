@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,28 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     //TODO id and page parameters
     Route::get('/goodsPage/{page?}', 'GoodspageController@index');
     Route::get('/productPage/{id?}', 'ProductpageController@index');
+});
+
+Route::name('user.')->group(function () {
+    Route::view('/profile', 'pages.profile')->middleware('auth')->name('profile');
+    Route::get('/login', function () {
+        if (Auth::check()) {
+            return redirect(route('user.profile'));
+        }
+        return view('pages.login');
+    })->name('login');
+//    Route::post('/login',[]);
+    Route::get('/logout', function () {
+        Auth::logout();
+        return redirect('/');
+    })->name('logout');
+    Route::get('/registration', function () {
+        if (Auth::check()) {
+            return redirect(route('user.profile'));
+        }
+        return view('pages.login');
+    })->name('registration');
+
+    Route::post('/registration', [\App\Http\Controllers\RegistrationController::class, 'save']);
 });
 
