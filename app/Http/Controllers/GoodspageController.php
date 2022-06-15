@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Brand;
 use App\Models\Category;
-use App\Models\Photo;
 use App\Models\Product;
-use App\Models\Size;
-use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class GoodspageController extends Controller
 {
     public function index()
     {
+        $products = Product::with(['brand', 'category', 'size', 'photos' => function (HasMany $query) {
+            $query->where('isGeneral', 1);
+        }]);
         return view('pages.goodspage', [
             'categories' => Category::all(),
-            'brands' => Brand::all(),
-            'sizes' => Size::all(),
-            'products' => Product::all(),
-            'popular' => Product::all()->where('popular', true),
-            'photos' => Photo::with('products')->where('isGeneral', true)
+            'products' => $products->simplePaginate(1),//24
+            'popular' => $products->where('popular', 1)->get(),
         ]);
     }
 }
