@@ -11,11 +11,16 @@ class Order extends Model
 
     public function products()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasOne(Product::class);
     }
 
-    public function clients()
+    public function users()
     {
-        return $this->belongsTo(Client::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function clientOrders()
+    {
+        return $this->belongsTo(ClientOrder::class);
     }
 }

@@ -5,13 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comment extends Model
+class ClientOrder extends Model
 {
     use HasFactory;
 
-    public function products()
+    protected $table = "clientOrders";
+
+    public function orders()
     {
-        return $this->belongsTo(Product::class);
+        return $this->hasMany(Order::class);
     }
 
     public function users()

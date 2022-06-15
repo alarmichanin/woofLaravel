@@ -14,19 +14,19 @@ class Product extends Model
         return $this->belongsToMany(Order::class);
     }
 
-    public function sizes()
+    public function size()
     {
-        return $this->hasOne(Size::class);
+        return $this->belongsTo(Size::class);
     }
 
-    public function brands()
+    public function brand()
     {
-        return $this->hasOne(Brand::class);
+        return $this->belongsTo(Brand::class);
     }
 
-    public function categories()
+    public function category()
     {
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function photos()
