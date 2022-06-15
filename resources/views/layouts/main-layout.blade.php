@@ -1,3 +1,8 @@
+<?php
+function current_page($uri = "/") {
+    return strstr(request()->path(), $uri);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +21,10 @@
                 <a href=""> <img src="{{asset("assets/logo.png")}}" alt="logo" class="logo"></a>
             </div>
             <div class="col-md-5 offset-md-3 col-lg-4 offset-lg-3 row menu">
-                <div class="col-3 aDiv"><a href="/" class="underline">Головна</a></div>
-                <div class="col-3 aDiv"><a href="/aboutPage">Про нас</a></div>
-                <div class="col-3 aDiv"><a href="goodsPage?page=0">Наші товари</a></div>
-                <div class="col-3 aDiv"><a href="contactPage">Контакти</a></div>
+                <div class="col-3 aDiv"><a href="{{ url('/') }}" class="{{current_page('/') ? 'underline' : '' }}">Головна</a></div>
+                <div class="col-3 aDiv"><a href="{{ url('/aboutPage') }}" class="{{current_page('aboutPage') ? 'underline' : '' }}">Про нас</a></div>
+                <div class="col-3 aDiv"><a href="{{ url('/goodsPage?page=0') }}" class="{{current_page('goodsPage') ? 'under line' : '' }}">Наші товари</a></div>
+                <div class="col-3 aDiv"><a href="{{ url('/contactPage') }}" class="{{current_page('contactPage') ? 'underline' : '' }}">Контакти</a></div>
             </div>
             <div class="col-4 col-sm-3 col-md-1 col-lg-1 offset-lg-1 iconsHeader">
                 <div class="row">
@@ -32,10 +37,10 @@
                     <div class="col-4 barI">
                         <i class="fa-solid fa-bars"></i>
                         <ul class="hamburger_menu">
-                            <li><a class="item" href="/">Головна</a></li>
-                            <li><a class="item" href="aboutPage">Про нас</a></li>
-                            <li><a class="item" href="goodsPage">Наші товари</a></li>
-                            <li><a class="item" href="contactPage">Контакти</a></li>
+                            <li><a class="item" href="{{ url('/') }}">Головна</a></li>
+                            <li><a class="item" href="{{ url('/aboutPage') }}">Про нас</a></li>
+                            <li><a class="item" href="{{ url('/goodsPage?page=0') }}">Наші товари</a></li>
+                            <li><a class="item" href="{{ url('/contactPage') }}">Контакти</a></li>
                             <li><i class="fa-solid fa-xmark close_menu"></i></li>
                         </ul>
                     </div>
