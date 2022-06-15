@@ -25,17 +25,21 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
 Route::name('user.')->group(function () {
     Route::view('/profile', 'pages.profile')->middleware('auth')->name('profile');
+
     Route::get('/login', function () {
         if (Auth::check()) {
             return redirect(route('user.profile'));
         }
         return view('pages.login');
     })->name('login');
-//    Route::post('/login',[]);
+
+    Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login']);
+
     Route::get('/logout', function () {
         Auth::logout();
-        return redirect('/');
+        return redirect('/login');
     })->name('logout');
+
     Route::get('/registration', function () {
         if (Auth::check()) {
             return redirect(route('user.profile'));
