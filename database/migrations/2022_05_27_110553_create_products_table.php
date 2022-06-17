@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->text('fullDescription');
             $table->string('EAN', 13)->unique();
             $table->string('MPN', 70)->unique();
-            $table->double('weight,kg');
+            $table->double('weight');
             $table->boolean('popular');
             $table->string('videoUrl');
             $table->unsignedBigInteger('category_id');
