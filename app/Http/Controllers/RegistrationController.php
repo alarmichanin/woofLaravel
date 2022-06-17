@@ -20,7 +20,6 @@ class RegistrationController extends Controller
             'email' => 'required|email',
             'password' => 'required'
         ]);
-//        TODO: this checking doesn't work
         if (User::query()->where('email', $validateFields['email'])->exists()) {
             return redirect(route('user.registration'))->withErrors(['email' => "Такий користувач уже зареєстрований"]);
         }
