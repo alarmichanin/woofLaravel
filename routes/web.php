@@ -3,28 +3,20 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'HomepageController@index');
     Route::get('/aboutPage', 'AboutpageController@index');
     Route::get('/contactPage', 'ContactpageController@index');
-    //TODO id and page parameters
-    Route::get('/goodsPage/{page?}', 'GoodspageController@index');
-    Route::get('/productPage/{id?}', 'ProductpageController@index');
+    Route::get('/goodsPage/{category_id?}', 'GoodspageController@index')->name('goods');
+    Route::get('/productPage/{slug?}', 'ProductpageController@index');
+    Route::get('/productPage/{slug?}/{count?}', 'ProductpageController@buy');
+    Route::get("/searchProduct",'SearchController@index');
+    Route::get("/sendMail",'MailController@send');
+    Route::get("/cartPage",'CartController@index');
 });
 
 Route::name('user.')->group(function () {
-    Route::view('/profile', 'pages.profile')->middleware('auth')->name('profile');
+    Route::view('/profile', 'pages.frontpage')->middleware('auth')->name('profile');
 
     Route::get('/login', function () {
         if (Auth::check()) {
