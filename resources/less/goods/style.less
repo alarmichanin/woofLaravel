@@ -32,7 +32,7 @@ body {
         .searcher {
             width: 100%;
             height: 50px;
-            padding: 2%;
+            padding: 2% 15% 2% 5%;
             font-size: 20px;
             border: none;
             outline: none;
@@ -54,6 +54,28 @@ body {
         padding: 0 30px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    .category-close {
+        &:hover {
+            background-color: @secondColor;
+            color: @thirdColor;
+        }
+
+        margin: 30px 0 40px 0;
+        height: 45px;
+        border-radius: 10px;
+        background-color: @thirdColor;
+        color: @mainColor;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .category {
         &:not(:first-child) {
             margin-top: 15px;
@@ -68,6 +90,11 @@ body {
         }
 
         &:hover {
+            background-color: @secondColor;
+            color: @thirdColor;
+        }
+
+        .clicked {
             background-color: @secondColor;
             color: @thirdColor;
         }
@@ -247,6 +274,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 0;
+    margin-top: 50px;
 }
 
 
@@ -372,12 +400,14 @@ body {
         display: flex;
         justify-content: flex-end;
     }
-    .start, .end{
-        a[class="page-link"]{
+
+    .start, .end {
+        a[class="page-link"] {
             text-decoration: none;
         }
-        span[class="page-link"]{
-            .circle{
+
+        span[class="page-link"] {
+            .circle {
                 background-color: #8C8674FF;
                 color: #494444;
             }
